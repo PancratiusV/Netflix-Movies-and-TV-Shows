@@ -1,19 +1,6 @@
 select *
 from netflix_movies_tvshows nmt 
 
-/*
- * Question to answer:
- * 1. Number of TV Shows vs Movies 
- * 2. Which cuontries have the most films produced on Netflix?
-		Which countries have the most TV shows produced on Netflix?
-		Which countries have the most products on Netflix?
-
- * 3. The number of movies and tv shows added on netflix each year
- * 4. Average duration of movies in netflix
- * 5. Average seasons of tv shows in netflix
- * 6. Top Genres in netflix
- * */
-
 --1.Number of TV Shows vs Movies 
 select type, count(*) as count
 from netflix_movies_tvshows nmt 
