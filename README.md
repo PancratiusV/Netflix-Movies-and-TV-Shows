@@ -1,11 +1,14 @@
-# Netflix-Movies-and-TV-Shows
+# Netflix Movies and TV Shows
  
 # Introduction
-This project contains the analysis of the Netflix Movies and TV Shows dataset from Kaggle. The dataset includes information about various movies and TV shows available on Netflix, including their genres, ratings, release dates, and more. The analysis aims to uncover insights and trends in the Netflix catalog.
+This project contains the analysis of the Netflix Movies and TV Shows dataset from Kaggle. The dataset includes information about various movies and TV shows available on Netflix, including their genres, ratings, release dates, and more. The analysis aims to uncover insights and trends in the Netflix catalog. In addition, this project is to increase my comfortability with SQL, Tableau, and Microsoft Excel
 
 
 # Dataset
-The dataset used for this analysis can be found here. It contains the following columns:
+The dataset used for this analysis can be found here: 
+[Netflix Movies and TV Shows](https://www.kaggle.com/datasets/rahulvyasm/netflix-movies-and-tv-shows)
+
+It contains the following columns:
 
 1. ***show_id***: Unique ID for each show
 2. ***type***: Type of the show (Movie or TV Show)
