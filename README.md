@@ -1,4 +1,4 @@
-# Netflix-Movies-and-TV-Shows
+# Netflix Movies and TV Shows
  
 # Introduction
 This project contains the analysis of the Netflix Movies and TV Shows dataset from Kaggle. The dataset includes information about various movies and TV shows available on Netflix, including their genres, ratings, release dates, and more. The analysis aims to uncover insights and trends in the Netflix catalog.
