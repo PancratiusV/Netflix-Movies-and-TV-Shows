@@ -30,6 +30,7 @@ The dataset used for this analysis can be found here. It contains the following 
 # Data Cleaning
 All data cleaning queries can be found on:
 [Data Cleaning](/sql%20scripts/Data%20Cleaning.sql)
+
 The steps I took to clean the dataset is:
 
 1. Removed the "s" from show_id column and turned the column into integer datatype.
