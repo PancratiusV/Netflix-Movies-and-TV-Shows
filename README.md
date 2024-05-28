@@ -93,6 +93,8 @@ from netflix_movies_tvshows nmt
 group by type
 ```
 
+This showed that 2677, or about 30.39%, of products in Netflix are TV shows, while 6132 products, or about 69.61%, are movies.
+
 ### 2. Which countries have the most products on Netflix?
 ```sql
 select country,type, count(*) as count
@@ -102,7 +104,10 @@ group by country, type
 order by count desc
 ```
 
-### 3. How many movies and tv shows are added on netflix each year?
+The top producer of movies and TV shows is United States. India is 2nd most on movies produced, but they are lacking in the TV show production. United Kingdom is 2nd on TV shows and also ranks high on movies.
+
+
+### 3. How many movies and tv shows are added on Netflix each year?
 ```sql
 select EXTRACT(year from date_added) as year,type, count(*) as count
 from netflix_movies_tvshows nmt 
@@ -111,27 +116,35 @@ group by year,type
 order by year
 ```
 
-### 4. What is the typical duration of movies in netflix?
+The number of movies and tv shows sharply increased from 2015 to 2019, but decreased rapidly from 2020 to 2024. This might be because of the pandemic and other factors closely related to it. 
+
+### 4. What is the typical duration of movies on Netflix?
 ```sql
 select round(avg(cast(left(duration, length(duration) -3 ) as integer)),2) as avg_minutes
 from netflix_movies_tvshows nmt 
 where duration like '%min%'
 ```
 
-### 5. What is the average number of seasons of the tv shows in netflix?
+The typical duration of movies is around 100 minutes, with the highest number of movies being 90 minutes long.
+
+### 5. What is the average number of seasons of the TV shows on Netflix?
 ```sql
 select duration, cast(left(duration, length(duration) -3 ) as integer) as minutes
 from netflix_movies_tvshows nmt 
 where duration like '%min%'
 ```
 
-### 6. What are the top genres in netflix?
+The average number of seasons is 1.76 seasons, with the most number of TV shows being 1 season.
+
+### 6. What are the top genres on Netflix?
 ```sql
 select listed_in, count(*) as count
 from netflix n 
 group by listed_in 
 order by count desc
 ```
+
+The top genre is Dramas, International Movies. Second place and following closely from 1st place is Documentaries. The third most popular genre is Stand-up Comedy.
 
 # Data Visualization
 It is easier to understand data visualized than just pure numbers, so I put all my findings into a Tableau dashboard. This is a simple dashboard using bar charts, line graphs, and pie chart.
